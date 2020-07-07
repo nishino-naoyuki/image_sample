@@ -15,13 +15,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/UploadStartServlet")
 public class UploadStartServlet extends HttpServlet {
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispacher = request.getRequestDispatcher("WEB-INF/jsp/upload.jsp");
-		dispacher.forward(request, response);
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher dispacher = request.getRequestDispatcher("WEB-INF/jsp/upload.jsp");
+        dispacher.forward(request, response);
+    }
 
 
 }
